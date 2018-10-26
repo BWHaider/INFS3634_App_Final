@@ -1,7 +1,7 @@
 package com.example.haider.infs2608learningapp;
 
 public class QuestionModel {
-
+    //template for quiz was obtained via giithub source code included in our references. Only change was the questions being posed
     //declarations of Question and Answer strings for use in the main activity
     private String Questions;
     private String Answers;

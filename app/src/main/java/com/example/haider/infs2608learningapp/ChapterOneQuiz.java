@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
-
+//template for quiz was obtained via giithub source code included in our references. Only change was the questions being posed
 public class ChapterOneQuiz extends AppCompatActivity {
 
     TextView questionSection, questionCountSection, scoreSection;
