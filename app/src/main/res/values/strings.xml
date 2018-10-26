@@ -1,0 +1,1238 @@
+<resources>
+    <string name="app_name">INFS2608 Learning App</string>
+
+    <string name="ChapterOne_text">
+        "Topic One: From File Systems to Big Data \n\n\n\n"
+"Examples of Database Applications\n\n"
+"Supermarket purchases, credit card purchases, travel agency bookings, internet use, university study.\n\n\n"
+
+"File-Based Systems\n\n"
+"Application programs perfuming services for end users. Each program defines and manages its own data. An example is the assignment done in INFS 1609.\n\n\n"
+
+"Limitations of File-Based Approach\n\n"
+"Each program has own data set, users of one program unaware of useful data held by other programs, data duplication, Data-application dependence, "
+"incompatible file formats, fixed queries, wasted space.\n\n\n"
+
+"Database Approach\n\n"
+"Beneficial since data definition doesn’t need to be embedded in app programs, as opposed to be stored separately and independently. "
+"There is no control over access and manipulation of data beyond that imposed by app programs.
+"The resulting product are Databases and Database Management Systems (DBMS).\n\n\n"
+
+"Database\n\n"
+Shared collection of logically related data meets information needs of an organisation."
+"A system catalogue (comprising of meta data, data dictionary) provides description of data which enables program-data independence. "
+"Logically related data comprises entities, attributes, relationships of an organisation’s information.\n\n\n"
+
+"Evolution of Data Models\n\n\n"
+
+"Database Management System (DBMS)\n\n"
+"A software system allowing users to define, create, maintain and control database access. "
+"An application program is a computer program which interacts with the database by issuing a request via an SQL statement to the DBMS.\n\n\n"
+
+"Database Approach\n\n"
+"Consists of Data definition language (permits specification of data types, structures) and Data Manipulation language (an enquiry facility).\n\n"
+
+"Controlled access to the database may comprise of a security system, a concurrency control system, a recovery control system and an integrity system.\n\n\n"
+
+"Views\n\n"
+"Views allow the user to have their own view of the database, which is subsequently their own subset of the database.\n"
+
+"The benefits include a level of security, reduced complexity, a mechanism to customise the appearance of the database and a consistent, "
+"unchanging picture of the structure of the database.\n\n\n"
+
+"Components of the DBMS Environment\n\n"
+"Hardware, which can range from one PC to a network of them.\n\n"
+
+"Software, including a DBMS, operating system, network software and application programs.\n\n"
+
+"Data used by the organisation and a description of this data called the schema.\n\n"
+
+"Procedures, which include instructions and rules to be applied to the design and use of the database and DBMS.\n\n"
+
+"People, who may have various roles such as a Data Administrator, Database Administrator, Database Designer, "
+"Application programmers, or End Users.\n\n"
+
+"Advantages of DBMSs\n\n"
+"Data redundancy control, data sharing, improved data integrity, economy of scale, data consistency, "
+"more info from the same amount of data, balance of conflicting requirements, improved back up and recovery services and increased concurrency.\n\n\n"
+
+"Disadvantages of DBMSs\n\n"
+"Can be complex, too large, high costs, conversion costs, performance issues, high impact of failure possible.\n\n\n"
+
+"Database Environment\n\n\n"
+"Three-Level Architecture\n\n"
+"According to three-level architecture, all users should be able to access the same data,"
+"a user’s view is to be immune to changes made in other views, a user "
+"shouldn’t need to know the physical database storage details and a database administrator should be able "
+"to change database storage structures without affecting the user’s views.\n\n\n"
+
+
+"ANSI-SPARC Three-Level Architecture\n\n"
+"At an external level: shows the users view of the database and describes the part of the database that is relevant to a user.\n\n"
+"At a conceptual level, there is a community view of the database, which describes what data is stored in the database, and the relationships among the data.\n\n"
+"At an internal level, there is a physical representation of the database on the computer, which describes how the data is stored in the database.\n\n\n"
+
+"Differences Between Three Levels of ANSISPARC Architecture\n\n\n"
+
+"Data Independence\n\n\n"
+"In data independence, logical data independence refers to the immunity of external schemas to changes in the conceptual schema. "
+"These changes shouldn’t require changes to external schema to rewrite any part of application programs.\n\n"
+
+"Physical data independence is the immunity of conceptual schema to changes in the internal schema.\n\n"
+
+"Internal scheme changes should not require change to the conceptual or external schemas.\n\n\n"
+
+"Data Independence and the ANSI-SPARC\n\n"
+"Three-Level Architecture\n\n\n"
+
+"Database Languages\n\n"
+"Data Definition Language (DDL) allows a Database Administrator (DBA) or a user to describe name entities, attributes, "
+"and relationships required for an application, with the addition of any integrity/security constraints.\n\n"
+
+"Data Manipulation Language (DML) provides basic data manipulation operations on data held in the database.\n\n"
+
+"Procedural DML such as PL-SQL permits a user to tell the system how to manipulate data\n\n"
+
+"Non-procedural DML like SQL allows a user to state what data is needed rather than how to be retrieved\n\n\n"
+
+"Data Model\n"
+"An integrated collection of concepts for describing data, relationships between them and constraints on it in an organisation. "
+"A data model has a structural part, a manipulative part and a set of integrity rules. Its purpose is to represent data in an understandable way.\n\n"
+
+"Categories include: object-based, record-based and physical.\n\n\n"
+
+"Data Models\n\n"
+"-  Object-Based Data Models\n\"
+"-  Entity-Relationship\n"
+"-  Semantic\n"
+"-  Functional\n"
+"-  Object-Oriented.\n"
+"-  Record-Based Data Models\n\n\n"
+
+"Relational Data Model\n\n"
+"-  Network Data Model\n\n\n"
+
+"Hierarchical Data Model\n\n"
+"-  Physical Data Models\n\n\n"
+
+"Network Data Model\n\n"
+
+"Hierarchical Data Model\n\n"
+
+"Conceptual Modelling\n\n"
+"Conceptual schema is the core of a system supporting all user views. "
+"It should be an accurate representation of an organisations data requirements, with no missing parts.\n\n"
+
+"Conceptual modelling is the process of developing a model of information use that is independent of implementation details, "
+"with the result being a conceptual data model.\n\n\n"
+
+"Functions of a DBMS\n"
+"The functions of a DBMS include data storage; retrieval; update, transaction support, recovery services, integrity services, "
+"utility services, integrity services and support for data communication.\n\n\n"
+
+"System Catalogue\n\n"
+"A repository of information describing data in the database. "
+"It is one of the fundamental components of a DBMS and typically stores names, types and sizes of data items. "
+"It also stores names of authorised users, constraints on data and usage statistics.\n\n\n"
+
+
+"Components of a DBMS\n\n\n"
+
+"Components of Database Manager\n\n\n"
+
+
+"Multi-User DBMS Architectures\n"
+"Includes teleprocessing, file-servers and client-servers\n\n\n"
+
+"Teleprocessing\n\n"
+"A traditional architecture which comprises of a single mainframe with several terminals attached. Trend now towards downsizing.\n\n\n"
+
+"File-Server\n\n"
+"File-server is connected to several workstations across a network, where the database also resides on file-server. "
+"DBMS and applications run on each workstation. Disadvantages are that there can be significant network traffic, "
+"a copy of DBMS on each workstation, and concurrency, recovery and integrity control are more complex.\n\n\n"
+
+"Traditional Two-Tier Client-Server\n\n"
+"-  Client (tier 1) manages user interface and runs applications.\n"
+"-  Server (tier 2) holds database and DBMS.\n\n"
+"Advantages include:\n\n"
+"-  wider access to existing databases;\n"
+"-  increased performance;\n"
+"-  possible reduction in hardware costs;\n"
+"-  reduction in communication costs;\n"
+"-  increased consistency.\n\n\n"
+
+"Three-Tier Client-Server\n\n"
+"Client side presented two problems which prevented true scalability (two-tier issues). "
+"A ‘fat’ client requiring considerable resources on a client’s computer to run. "
+"By 1995, three layers proposed each running on a different platform, the development of a ’thin’ client requiring less expensive hardware. "
+"It became easier to modify or replace one tier without affecting others. "
+"Separating business logic from database functions makes it easier to implement load balance.\n\n\n"
+
+"Transaction Processing Monitors\n"
+"Program controlling data transfer between clients and servers to provide a consistent environment, particularly for Online Transaction Processing.\n\n\n"
+
+"Big Data\n\n"
+"Is a set of data analysis and predictive analysis techniques for large and complex systems of raw data. "
+"It uses machine learning and data mining techniques on raw data. "
+"It has emerged due to much larger sets of data sources, much cheaper costs to store data and a growing interest in identifying patterns.\n\n\n"
+    </string>
+    <string name="ChapterTwo_text1">
+              "Topic Two: Advanced SQL\n\n\n\n"
+"SQL: DML (Data Manipulation Language)\n\n\n"
+
+"Objectives of SQL:\n\n\n"
+"A database language allows a user to create a database with relational structures where the data can be modified.\n\n"
+"It has two components, DML for retrieving/updating data, and DDL for defining database structure.\n\n"
+"SQL is non-procedural, meaning you specify what info you need, not how to get it. \n\n"
+"Follows an ISO standard\n\n"
+"FROM, WHERE, GROUP BY, HAVING, SELECT and ORDER BY statements\n\n\n"
+
+"SELECT Statements – Aggregates\n\n\n"
+"Five aggregate functions:\n\n"
+"COUNT: returns number of values in column\n\n"
+"SUM: returns sum of values in column\n\n"
+"AVG: returns average of values in column\n\n"
+"MIN: returns smallest value in column\n\n"
+"MAX: returns largest value in column\n\n\n"
+
+"Aggregates operate on a single column of a table and returns one value. Except for COUNT(*), "
+"each function eliminates nulls first and operates only on remaining non-null values. The use of DISTINCT before a column name eliminates duplicates.\n\n"
+"They can only be used in SELECT list and in HAVING clause\n\n\n"
+
+"SELECT Statement – Grouping\n\n\n"
+"GROUP By clause gets sub-totals\n"
+"SELECT and GROUP BY are closely integrated, each item in SELECT list must be single-valued per group, "
+and SELECT clause may only contain column names, aggregate functions, constants and expressions involving combinations of the above. \n\n\n"
+
+"Restricted Groupings – HAVING CLAUSE\n\n\n"
+"Designed for use with GROUP BY to restrict groups that appear in result table. Similar to WHERE, "
+"but WHERE filters individual rows whereas HAVING filters groups. "
+"Column names in HAVING clause must also appear in the GROUP BY list or be contained within an aggregate function. \n\n\n"
+
+"Subqueries:\n\n\n"
+"Some SQL statements can have a SELECT embedded in them. A sub select can be used in WHERE and HAVING clauses of an outer SELECT, "
+"where its called a subquery or nested query. Sub selects may also appear in INSERT, UPDATE, and DELETE statements. \n\n\n"
+
+"Multi-Table Queries:\n\n\n"
+"Use of subqueries provided result columns come from the same table. If result columns come from more than one table, "
+"then you must use a Join. To do a Join, you must include more than one table in the FROM clause. "
+"You use comma as a separator and typically include WHERE clause to specify Join columns. \n\n\n"
+
+"EXISTS and NOT EXISTS\n\n\n"
+"For use only with subqueries. They produce a simple true/false result. True only if there is at least one row in the result table "
+"returned by the subquery, false if subquery returns empty result table.\n\n\n"
+
+
+"SQL: DDL (Data Definition Language):\n\n\n"
+
+"ISO SQL Data Types:\n\n\n"
+    </string>
+    <string name="ChapterTwo_text2">
+        "Integrity Constraints:\n\n\n"
+"1. Required data (required fields to not be empty (not NULL))\n"
+"2. Domain constraints (required field entries to be of a certain domain)\n"
+"3. Entity integrity (Unique Primary Key)\n"
+"4. Referential integrity (Foreign Key has a matching Primary key)\n"
+"5. General constraints\n\n\n"
+
+"Data Definition\n\n\n"
+"SQL DDL allows database objects like schemas, domains, tables, views, and indexes to be created and destroyed. \n\n"
+"Relations and other database objects exist in an environment. Each environment has one or more catalogs, "
+"where each catalog has a set of schemas. A schema is a named collection of related database objects. "
+"Objects in a schema can be tables, views, domains, assertions, collations, translations, and character sets.\n\n\n"
+
+"Views\n"
+    </string>
+    <string name="ChapterTwo_text3">
+    "Views are the dynamic result of one or more relational operations operating on base relations to produce another relation. "
+"Virtual relation that doesn’t necessarily exist in the database but is produced upon request, at time of request. \n\n"
+
+"Contents of a view are defined as a query one plus base relations. With view resolution, "
+"any operations on the view are automatically translated into operations on relations from which its derived. "
+"With view materialisation, the view is stored as a temporary table, which is maintained even if the underlying base tables are updated. \n\n\n"
+</string>
+    <string name="ChapterThree_text1">
+        "Topic Three: Database System Development Lifecycle\n\n\n\n"
+
+"Database System Development Lifecycle\n\n\n"
+"Includes:\n\n"
+"-  Database planning\n"
+"-  System definition\n"
+"-  Requirements collection and analysis\n"
+"-  Database design\n"
+"-  DBMS selection (optional)\n"
+"-  Application design\n"
+"-  Prototyping (optional)\n"
+"-  Implementation\n"
+"-  Data conversion and loading\n"
+"-  Testing\n\n\n"
+
+    </string>
+    <string name="ChapterThree_text2">
+        "Database Planning\n\n\n"
+"Management activities allowing stages of database system development lifecycle to be realised as efficiently and effectively as possible\n\n"
+
+"To be integrated with overall IS strategy.\n\n\n"
+
+"Database Planning – Mission Statement and Objectives\n\n\n"
+"Mission statement involves major aims being defined for database application. "
+"People driving database project normally define the mission statement. It clarifies the purpose of the database project and provides a clearer "
+"path towards efficient and effective creation of the database system.\n\n"
+
+"Post mission statement, the objectives are defined, where each of which identifies a specific task the database is to support. "
+"This may be accompanied by additional information specifying the work to be done, the resources to do it and the money to pay for it. \n\n\n"
+
+"Database Planning\n\n\n"
+"To include development of standards governing how data is to be collected, the format specified and the necessary documentation needed.\n\n\n"
+
+"System Definition\n\n\n"
+"Describes the scope and boundaries of the database system and the major user views.\n\n\n"
+
+"Requirements Collection and Analysis\n\n\n"
+"Process of collecting and analysing information about the part of the organisation to be supported by the database system and using "
+"the information to identify user requirements. \n\n"
+"Important to decide which approach to use in managing multiple user views. Whether this be a centralised approach, view integration approach or a combination.\n\n\n"
+
+
+"Local vs Global Data Model\n\n\n"
+"Data model representing single user view which is called a local data model. Each model has diagrams and documentation which describes requirements "
+"for one or more but not all users of the database. Local data models are merged at a later stage during database design to produce "
+"a global data model, representing all user views for the database. \n\n\n"
+
+"Database Design\n\n\n"
+"Process of creating a design for a database to support the enterprises mission statement and mission objectives for the system. \n\n"
+"Main approaches involve Top-down, bottom-up, inside-out and mixed.\n\n"
+"The main purposes of a data model in design is to ensure we understand each users perspective on the data, "
+"the nature of the data itself and the use of data across user view. \n\n"
+"Three phases:\n\n"
+"Conceptual database Design, Logical database Design, Physical database design\n\n\n"
+    </string>
+    <string name="ChapterThree_text3">
+"Conceptual Database Design\n\n\n"
+"Process of constructing a model of the data used in an enterprise, independent of physical considerations. "
+"Data model is built using information in user requirements specification. Conceptual data model is a source of information for logical design phase.\n\n\n"
+
+"Logical Database Design\n\n\n"
+"Process of constructing model of data used in an enterprise based on a specific data model, but independent of a DBMS and other physical considerations.\n\n"
+"Conceptual Data model is refined and mapped on to a logical data model.\n\n"
+
+"Physical Database Design\n\n\n"
+"Process of producing a description of the database implementation on secondary storage. Describes base relations, "
+"file organisations, and indexes used to achieve efficient access to data. Also describes any associated integrity constraints and security measures.\n\n\n"
+
+"DBMS Selection\n\n\n"
+"Selection of an appropriate DBMS to support the database system. It is to be undertaken at any time prior "
+"to logical design provided enough information is available regarding system requirements. The Main steps to selecting a DBMS include "
+"defining Terms of Reference of study; shortlisting two or three products; evaluating products; recommending selection and producing report.\n\n\n"
+
+"Application Design\n\n\n"
+"Design of user interface and application programs that use and process the database. "
+"Database design and application design are parallel activities. It includes two important activities – transaction design and user interface design.\n\n\n"
+
+"Prototyping\n\n\n"
+"Prototyping helps to identify features of a system that work well or are inadequate, to suggest improvements "
+"or new features, to clarify the users requirements and to evaluate the feasibility of a particular system design.\n\n\n"
+
+"Implementation\n\n\n"
+"The physical realisation of the database and application design. DDL is used to create database schemas "
+"and empty database files and any specified user views. 3rd generation or 4th generation programming languages are used to create the application programs. \n\n\n"
+
+"Data Conversion and Loading\n\n\n"
+"Transferring any existing data into the new database and converting any existing ap0plications to run on the new database.\n\n\n"
+
+"Testing\n\n\n"
+"Running the database system with intent of finding errors. Use of carefully planned test strategies and realistic data. \n\n\n"
+
+"Operational Maintenance\n\n\n"
+"The process of monitoring and maintaining the database system post-installation. Overall, you monitor the performance "
+of the system, acting accordingly whether performance falls or upgrades are needed.\n\n\n"
+    </string>
+    <string name="ChapterFour_text">
+       "Topic 4: Relational Model and Relational Algebra\n\n\n\n"
+
+"Relational Model\n\n"
+"Relational Model Terminology \n\n"
+"A relation is a table with columns and rows. It only applies to logical structure of the database, not the physical structure. "
+"An attribute is a named column of a relation. Domain is the set of allowable values for one or more attributes. \n\n"
+
+"A Tuple is a row of a relation. Degree is the number of attributes in a relation. Cardinality is the number of tuples "
+"in a relation. Relational Database is a collection of normalized relations with distinct relation names.\n\n\n"
+
+
+"Database Relations\n\n"
+"A Named relation defined by a set of attribute and domain name pairs.\n\n\n"
+
+"Properties of Relations\n\n"
+"Relation name is distinct from all other relation names in relational database "
+"schema. Each cell of relation contains exactly one atomic (single) value. Each attribute has a distinct name. "
+"Values of an attribute are all from the same domain.  Each tuple is distinct; there are no duplicate tuples. The order of attributes has "
+"no significance. The order of tuples has no significance, theoretically.\n\n\n"
+
+"Relational Keys\n\n"
+"An attribute, or set of attributes, that uniquely identifies a tuple within a relation.\n\n\n"
+
+"Candidate Key\n\n"
+"Superkey (K) such that no proper subset is a superkey within the relation. In each tuple of R, values of K uniquely "
+"identify that tuple (uniqueness). No proper subset of K has the uniqueness property (irreducibility).\n\n\n:"
+
+"Primary Key\n\n"
+"Candidate key selected to identify tuples uniquely within relation. \n\n\n"
+
+"Alternate Keys\n\n"
+"Candidate keys that are not selected to be primary key.\n\n\n"
+
+"Foreign Key\n\n"
+"Attribute, or set of attributes, within one relation that matches candidate key of some (possibly same) relation.\n\n\n"
+
+
+"Integrity Constraints\n\n"
+"Represents value for an attribute that is currently unknown or not applicable "
+"for tuple. Deals with incomplete or exceptional data. Represents the absence of a value and is not the same as zero or spaces, which are values.\n\n"
+
+"Entity Integrity\n\n"
+"In a base relation, no attribute of a primary key can be NULL.\n\n"
+
+"Referential Integrity\n\n"
+"If foreign key exists in a relation, either foreign key value must match a candidate key value of some tuple in its home relation or "
+"foreign key value must be wholly NULL.\n\n"
+
+"General Constraints\n\n"
+"Additional rules specified by users or database administrators that define or constrain some aspect of the enterprise (e.g., domain integrity).\n\n\n"
+
+"Views\n\n"
+"Named relation corresponding to an entity in conceptual schema, whose tuples "
+"are physically stored in database. View is a dynamic result of one or more relational operations on base relations to produce another relation.\n"
+"A virtual relation that does not necessarily actually exist in the database but is produced upon request, at time of request. Contents of a view are defined "
+"as a query on one or more base relations. Views are dynamic, meaning that changes made to base relations that affect view attributes are immediately reflected in the view.\n\n\n"
+
+"Purpose of Views\n\n"
+"Provides powerful and flexible security mechanism by hiding parts of database from certain users. Permits users to access data in a "
+"customized way, so that same data can be seen by different users in different ways, at same time. Can simplify complex operations on base relations.\n\n\n"
+
+"Updating Views\n\n"
+"All updates to a base relation should be immediately reflected in all views that "
+"reference that base relation. If view is updated, underlying base relation should reflect change, typically. There are restrictions on types of modifications "
+"that can be made through views:  Updates are allowed if query involves a single base relation and contains a candidate key of base relation.\n\n"
+
+"Updates are not allowed involving multiple base relations. "
+"Updates are not allowed involving aggregation or grouping operations. Classes of views are defined as: theoretically not updateable; "
+"theoretically updateable; partially updateable.\n\n\n"
+
+"Relational Algebra\n\n"
+"Relational algebra and relational calculus are formal languages associated with the relational model.\n\n"
+
+"Informally: relational algebra is a (high-level) procedural language. Relational calculus a non-procedural language. However, formally "
+"both are equivalent to one another.\n\n"
+
+"A language that produces a relation that can be derived using relational calculus is relationally complete (e.g., SQL). "
+"Relational algebra operations work on one or more relations to define another relation without changing the original relations.\n\n"
+
+"Both operands and results are relations, so output from one operation can become input to another operation.\n\n"
+
+"Five basic operations in relational algebra: Selection, Projection, Cartesian Product, Union, and Set Difference.\n"
+
+"These perform most of the data retrieval operations needed.\n"
+
+"Also have Join, Intersection, and Division operations, which can be expressed in terms of the five basic operations.\n\n\n"
+    </string>
+    <string name="ChapterFive_text1">
+        "Topic 5: Data Security\n\n\n\n"
+
+
+"Data Security\n\n"
+"Data is a valuable resource that must be strictly controlled and managed, as with any corporate resource.\n\n"
+
+
+"Part or all of the corporate data may have strategic importance and therefore needs to be kept secure and confidential.\n\n"
+
+"Mechanisms that protect the database against intentional or accidental threats.\n\n"
+
+"Security considerations do not only apply to the data held in a database. Breaches of security may affect other parts of the system, which "
+"may in turn affect the database.\n\n"
+
+"Involves measures to avoid: Theft and fraud, Loss of confidentiality, Loss of privacy, Loss of integrity, Loss of availability\n\n\n"
+
+"Overview of Threats\n\n"
+    </string>
+    <string name="ChapterFive_text2">
+        "Countermeasures to Threats\n\n"
+"Countermeasures are concerned with physical controls to administrative "
+"procedures and includes: Access control: authentication / authorization, Views, Backup and recovery, Integrity, Encryption, RAID technology\n\n\n"
+
+"Authentication / Authorization\n\n"
+"Authentication: process of determining whether a user is, who he or she claims to be.\n"
+
+"Authorization: rules to determine what the user can access and do (access control).\n"
+
+"Based on the granting and revoking of privileges. A privilege allows a user to create or access (that is "
+"read, write or modify) some database object (such as a relation, view and index) or to run certain DBMS utilities. "
+"Privileges are granted to users to accomplish the tasks required for their jobs.\n\n\n"
+
+"Discretionary Access Control (DAC)\n\n"
+"Most DBMS provide an approach called Discretionary Access Control (DAC). SQL standard supports DAC through the GRANT and REVOKE commands.\n"
+
+"The GRANT command gives privileges to users, the REVOKE command takes away privileges.\n\n"
+
+"DAC while effective has certain weaknesses. In particular an unauthorized user can "
+"trick an authorized user into disclosing sensitive data. Problem: social engineering / users control DAC.\n\n"
+
+"An additional approach is required called Mandatory Access Control (MAC). The SQL standard does not include support for MAC.\n\n"
+
+"DAC based on system-wide policies that cannot be changed by individual users. q Each database object is assigned a security class. "
+"Each user is assigned a clearance for a security class. \n"
+
+"Rules are imposed on reading and writing of database objects by users.  DAC determines whether a user can read or write an object "
+"based on rules that involve the security level of the object and the clearance of the user. These rules ensure that sensitive data can never "
+"be ‘passed on’ to another user without the necessary clearance.\n\n\n"
+
+
+"Views\n\n"
+"View: is the dynamic result of one or more relational operations operating on the "
+"base relations to produce another relation. A view is a virtual relation that does not actually exist "
+"in the database, but is produced upon request by a particular user, at the time of request. \n\n\n"
+
+"Backup and Recovery\n\n"
+"Backup: Process of periodically taking a copy of the database and log file (and "
+"possibly programs) to offline storage media.\n\n"
+
+"Journaling: Process of keeping and maintaining a log file (or journal) of all changes made to database to enable effective recovery in event of failure.\n\n\n"
+
+"Integrity\n\n"
+"Integrity: Prevents data from becoming invalid, and hence giving misleading or incorrect results (integrity constraints).\n\n\n"
+
+
+"Encryption\n\n"
+"Encryption: The encoding of the data by a special algorithm that renders the data unreadable by any program without the decryption "
+"key (public-key-private-key encryption).\n\n"
+
+"RAID Technology\n"
+"RAID = Redundant Array of Independent Disks\n"
+"Hardware that the DBMS is running on must be fault-tolerant, meaning that the DBMS should continue to operate even if one of the hardware components fails.\n\n"
+
+"Suggests having redundant components that can be seamlessly integrated into the working system whenever there is one or more component failures.\n"
+
+"The main hardware components that should be fault-tolerant include disk drives, disk controllers, CPU, power supplies and cooling fans.\n"
+
+"Disk drives are the most vulnerable components with the shortest times between failure of any of the hardware components.\n"
+
+"One solution is to provide a large disk array comprising an arrangement of several independent disks that are organized to improve "
+"reliability and at the same time increase performance.\n"
+
+"Performance is increased through data striping: the data is segmented into equal- size partitions (the striping unit), which are "
+"transparently distributed across multiple disks.\n"
+
+"Reliability is improved through storing redundant information across the disks using a parity scheme or an error-correcting scheme.\n\n"
+
+    </string>
+    <string name="ChapterFive_text3">
+        "DBMSs and Web Security\n\n"
+"Internet communication relies on TCP/IP as the underlying protocol. However, TCP/IP and HTTP were not designed with security in mind.\n"
+
+"Without special software, all Internet traffic travels ‘in the clear’ and anyone who monitors traffic can read it.\n\n"
+
+"Must ensure while transmitting information over the Internet that: inaccessible to anyone but sender and receiver ( "
+"privacy); not changed during transmission (integrity); receiver can be sure it came from sender (authenticity); sender can be "
+"sure receiver is genuine (non-fabrication); sender cannot deny he or she sent it (non-repudiation).\n"
+
+"Measures include: Proxy servers, Firewalls, Message digest algorithms and digital signatures, Digital certificates, Kerberos "
+"(network authentication protocol), Secure sockets layer (SSL) and Secure HTTP (HTTPS), Secure Electronic Transactions (SET) and "
+"Secure Transaction Technology (SST), Java security, ActiveX security\n\n\n"
+    </string>
+    <string name="ChapterSix_text1">
+         "Topic 6: Transaction Management\n\n\n\n"
+
+"Transaction\n\n\n"
+
+"Action, or series of actions, carried out by user or application, which reads or updates contents of database.\n\n"
+
+"Logical unit of work on the database.\n\n"
+
+"Transforms database from one consistent state to another, although consistency may be violated during transaction.\n\n"
+
+"Application program is series of transactions with non-database processing taken place in-between.\n\n"
+
+"Transaction Support\n\n\n"
+"A transaction can have two outcomes:\n"
+"1) Success: transaction commits and database reaches a new consistent state.\n"
+"2) Failure: transaction aborts, and database must be restored to consistent state before it started.\n\n"
+
+"Such a transaction is rolled back or undone. Committed transaction cannot be aborted.\n"
+"An aborted transaction that is rolled back can be restarted later.\n\n"
+
+"Properties of Transactions Four basic ACID properties that define a transaction are:\n"
+"1)  Atomicity: ‘All or nothing’ property.\n"
+"2)  Consistency: Must transform database from one consistent state to another.\n"
+"3)  Isolation: Partial effects of incomplete transactions should not be visible to other transactions.\n"
+"4)  Durability: Effects of a committed transaction are permanent and must not be lost because of later failure.\n"
+
+"DBMS Overall System\n"
+    </string>
+    <string name="ChapterSix_text2">
+        "Concurrency Control\n\n\n"
+"The process of managing simultaneous operations on the database without having them interfere with one another.\n"
+
+"Prevents interference when two or more users are accessing database simultaneously and at least one is writing (updating) data (not only reading).\n\n"
+
+"Although two transactions may be correct in themselves, interleaving of operations (based on parallel execution of applications) may produce an incorrect result.\n\n"
+"Why do we need concurrency control?\n\n"
+"Three examples of potential problems caused by concurrency:\n"
+"1)  Lost update problem\n"
+"2)  Uncommitted dependency problem\n"
+"3)  Inconsistent analysis problem\n\n\n"
+
+
+"Concurrency Control\n\n"
+"Four key concepts of concurrency control:\n"
+"1)  (View) Serializability (VS)\n"
+"2)  Conflict serializability (CS)\n"
+"3)  Two-phase locking (2PL)\n"
+"4)  Timestamping (TS)\n\n\n"
+
+
+
+"Serializability\n\n"
+"One measure of concurrency control.\n"
+
+"Objective of a concurrency control protocol is to schedule transactions in such a way as to avoid any interference.\n"
+
+"Could run transactions serially, but this limits degree of concurrency or parallelism in system.\n"
+
+"Serializability identifies those parallel executions of transactions guaranteed to ensure consistency.\n\n"
+
+"Schedule: Sequence of reads/writes by set of concurrent transactions.\n"
+"Serial Schedule: Schedule where operations of each transaction are executed consecutively without any interleaved operations from other transactions\n"
+
+"Note: This is no guarantee that results of all serial executions of a given set of transactions will be identical (example: execute transaction calculate "
+"interest first or transaction “make deposit” first? – different order results in different values)\n\n\n"
+
+
+"Nonserial Schedule\n\n"
+"Nonserial Schedule: Schedule when operations from set of concurrent "
+"transactions are interleaved.\n\n"
+
+"Objective of serializability:\n"
+"To find nonserial schedules that allow transactions to execute concurrently without interfering with one another that is, to find nonserial schedules "
+"that are equivalent to some serial schedule. Such a schedule is called serializable.\n\n\n"
+
+"Serializability\n\n"
+"In serializability, the order of execution of read/writes is important:\n"
+"If two transactions only read a data item, then they do not conflict and order of execution is not important.\n"
+"If two transactions either read or write separate data items, then they do not conflict and order is not important.\n"
+"If one transaction writes a data item and another reads or writes same data item, then the order of execution is important.\n\n\n"
+
+
+"Conflict Serializability\n\n"
+"A conflict serializable schedule orders any conflicting operations in same way as "
+"some serial execution.\n"
+"Different serial executions (say: T1T2T3, T3T1T2) may have different outcomes, the "
+"serialized schedule needs to be identical one of the executions/orders.\n\n\n"
+
+"Recoverability\n\n"
+"Serializability identifies schedules that maintain database consistency, assuming "
+"no transaction fails.\n"
+"Now we examine recoverability of failed transactions within schedule.\n"
+"If transaction fails… Atomicity for failed transaction requires effects of transaction to be undone(e.g., T1).\n\n"
+
+"Durability of another, completed transaction (e.g., T2) requires that once transaction commits, its changes cannot be undone. "
+"This may lead to a nonrecoverable schedule (i.e., T1 may have impacted on T2), which should not be allowed.\n\n\n"
+
+"Concurrency Control Techniques\n\n"
+"Two main concurrency control techniques (to implement conflict serializability): Locking. Timestamping.\n"
+
+"Locking and timestamping are conservative/pessimistic methods: they delay "
+"transactions in case they conflict with other transactions.\n"
+
+"Optimistic approaches methods assume conflict is rare and only check for conflicts at commit.\n\n\n"
+
+"Locking*\n\n"
+"Transaction uses locks to deny access to other transactions and so prevent incorrect updates. It is the most widely used approach to ensure serializability.\n\n"
+
+"Generally, a transaction must claim (acquire) for a data item: shared lock (read) lock: prevents other transactions from updating data item, an "
+"exclusive lock (write) lock: prevents other transactions from reading and updating data item.\n\n"
+
+"If transaction has shared lock on item, then it can read but not update item.\n"
+"If transaction has exclusive lock on item, then it can both read and update item. Reads cannot conflict, so more than one transaction can hold "
+"shared locks simultaneously on same item.\n\n"
+
+"Writes can conflict, so exclusive lock gives transaction exclusive access to that "
+"item (for writes). Some systems allow transactions to change lock type: Upgrade shared lock to an exclusive lock. Downgrade exclusive lock to a shared lock.\n\n\n"
+
+
+"Two-Phase Locking (2PL)*\n\n"
+"A transaction follows the two-phase locking protocol if all locking operations precede the first unlock operation in the transaction.\n\n"
+
+"Two phases for transaction:\n"
+"Growing phase: acquires all locks but cannot release any locks.\n"
+"Shrinking phase: releases locks but cannot acquire any new locks.\n\n"
+
+"A transaction must acquire a lock on an item before operating on the item. Once the transaction releases a lock, it can never "
+"acquire any new locks. It can be proven that if every transaction in a schedule follows the two-phase locking protocol, then the "
+"schedule is guaranteed to be conflict serializable (Eswaran et al. 1976).\n\n"
+
+"However, problems can still occur:\n"
+"1) Cascading rollbacks\n"
+"2) Deadlocks\n\n\n"
+
+"Timestamp\n\n"
+"A unique identifier created by DBMS that indicates relative starting time of a transaction.\n"
+
+"Timestamp generated using system clock at time transaction started/ incrementing a logical counter every time a new transaction starts.\n\n"
+
+"A concurrency control protocol that orders transactions in such a way that older transactions, transactions with smaller timestamps, get priority "
+"in the event of conflict.\n\n"
+
+"Transactions ordered globally so that older transactions get priority in the event of conflict.\n"
+"Conflict is resolved by rolling back and restarting other transactions. Timestamping is an alternative method to locks.\n\n"
+
+"No locks, so no deadlock.\n\n"
+"Two types of timestamps:\n"
+"1. Transaction Timestamps -  Timestamp of transactions itself (generated at its start)\n"
+"2. Data item timestamps: Read-timestamp: timestamp of last transaction (not system time) to read item. Write-timestamp: timestamp of "
+"last transaction to write item.\n\n\n"
+    </string>
+    <string name="ChapterSeven_text">
+        "Topic 7: Data and the Internet\n\n\n\n"
+
+"Database Architectures and the Web\n\n\n"
+
+"Multi-User DBMS Architectures\n\n"
+"The common architectures that are used to implement multi-user database management systems: Teleprocessing, File-Server, Client-Server\n\n\n"
+
+"n-Tier Client-Server (e.g., 4-Tier)\n\n"
+"The three-tier architecture can be expanded to n tiers, with additional tiers providing more flexibility and scalability.\n"
+"1)  Client = end–user client trying to access webpages\n"
+"2)  Web server = webpages (e.g., APEX)\n"
+"3)  Application servers = Applications servers host APIs to expose business logic and business processes for use by other applications.\n"
+"4)  Database server = database (e.g., Oracle)\n\n"
+
+
+"Middleware\n\n"
+"Middleware is a generic term used to describe software that mediates with other software and allows for communication between disparate \n"
+"applications in a heterogeneous system.\n\n"
+
+"The need for middleware arises when distributed systems become too complex to manage efficiently without a common interface.\n\n\n"
+
+"Transaction Processing Monitors\n\n"
+"Transaction Processing Monitor (TPM) is a program that controls data transfer between clients and servers in order to provide a "
+"consistent environment, particularly for online transaction processing (OLTP).\n\n\n"
+
+"Transaction Processing Monitor as Middle Tier of 3-Tier Client-Server\n\n"
+
+
+"Web Services and Service-Oriented Architectures\n\n"
+"Web service is a software system designed to support interoperable machine-to- web service machine interaction over a network.\n"
+"Web services share business logic, data and processes through a programmatic interface across a network.\n\n"
+
+"Developers can add web services to a web pages (or an executable program) to offer specific functionality to users.\n\n"
+
+"Web services approach uses accepted technologies and standards, such as:\n"
+"XML (eXtensible Markup Language)\n"
+"SOAP (Simple Object Access Protocol) is a communication protocol for exchanging structured information over the Internet and uses a message format based on "
+"XML. It is both platform- and language-independent.\n"
+"WSDL (Web Services Description Language) protocol, again based on XML, is used to describe and locate a web service.\n"
+"UDDI (Universal Discovery, Description and Integration) protocol is a platform independent, XML-based registry for businesses to list themselves on the Internet.\n\n\n"
+
+"Service-Oriented Architectures (SOA)\n\n"
+"A business-centric software architecture for building applications that implement business processes as sets of services published at a granularity "
+"relevant to the service consumer. Services can be invoked, published, and discovered, and are abstracted away from the implementation using a single "
+"standards-based form of interface.\n\n\n"
+
+"Distributed DBMSs\n\n"
+"A distributed database is a logically interrelated collection of shared data (and a description of this data), physically distributed over a computer network.\n\n"
+
+"A distributed DBMS is the software system that permits the management of the distributed database and makes the distribution transparent to users.\n\n"
+
+"A DDBMS consists of a single logical database split into a number of fragments.\n"
+"Each fragment is stored on one or more computers (replicas) under the control of a separate DBMS, with the computers connected by a network.\n\n"
+
+"Each site is capable of independently processing user requests that require access to local data (that is, each site has some degree of local autonomy) "
+"and is also capable of processing data stored on other computers in the network.\n\n\n"
+
+"Data Warehousing\n\n"
+"A data warehouse was deemed the solution to meet the requirements of a system capable of supporting decision making, receiving data from multiple operational "
+"data sources.\n\n\n"
+
+"Cloud Computing\n\n"
+"The National Institute of Standards and Technology (NIST) provided a definition. Defined as “A model for enabling ubiquitous, convenient, on-demand network "
+"access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned "
+"and released with minimal management effort or service provider interaction.\n\n\n”
+
+
+"Cloud Computing: Key Characteristics\n\n"
+"On-demand self-service\n"
+"Consumers can obtain, configure and deploy cloud services without help from provider.\n\n"
+
+"Broad network access Accessible from anywhere, from any standardized platform (e.g. desktop, computers, laptops, mobile devices).\n"
+"Resource pooling Provider’s computing resources are pooled to serve multiple consumers, with different physical and virtual resources "
+"dynamically assigned and reassigned according to consumer demand. Examples of resources include storage, processing, memory and network bandwidth.\n\n"
+
+"Rapid elasticity: Provider’s capacity caters for customer’s spikes in demand and reduces risk of outages and service interruptions. Capacity can "
+"be automated to scale rapidly based on demand.\n"
+"Measured service: Provider uses a metering capability to measure usage of service (e.g. storage, processing, bandwidth and active user accounts).\n\n\n"
+
+
+
+"Cloud Computing: Service Models q Software as a Service (SaaS):\n\n"
+"Software and data hosted on cloud. Accessed through using thin client interface (e.g., web browser). Consumer may be offered limited user specific application "
+"configuration settings.\n"
+"Examples: Salesforce.com sales management applications, NetSuite’s integrated business management software, Google’s Gmail and Cornerstone OnDemand\n\n\n"
+
+"Platform as a Service (PaaS)\n\n"
+"Allows creation of web applications without buying/maintaining the software and underlying infrastructure.\n\n"
+
+"Provider manages the platform including network, servers, OS and storage, while customer controls deployment of applications and possibly configuration.\n"
+"Examples: Google’s App Engine, Microsoft’s Azure\n\n\n"
+
+"Infrastructure as a Service (IaaS)\n\n"
+"Provider’s offer servers, storage, network etc. – typically a platform virtualization environment – to consumers as an on-demand service, in a single "
+"bundle and billed according to usage.\n\n"
+
+"A popular use of IaaS is in hosting websites.\n"
+"Examples: Amazon’s Elastic Compute Cloud (EC2), Rackspace and GoGrid\n\n\n"
+
+
+"Cloud Computing: Benefits\n\n"
+"Cost-Reduction: Avoid up-front capital expenditure.\n"
+"Scalability/Agility: Organisations set up resources on an as-needs basis.\n"
+"Improved Security: Providers can devote expertise and resources to security; not affordable by customer.\n"
+"Improved Reliability: Providers can devote expertise and resources on reliability of systems; not affordable by customer.\n\n"
+"Access to New Technologies: Through use of provider’s systems, customers may access latest technology.\n"
+"Faster Development: Provider’s platforms can provide many of the core services to accelerate development cycle.\n"
+"Large Scale Prototyping/Load Testing: Providers have the resources to enable this.\n"
+"More Flexible Working Practices: Staff can access files using mobile devices.\n"
+"Increased Competitiveness: Allows organizations to focus on their core competencies rather than their IT infrastructures.\n\n\n"
+
+
+"Cloud Computing: Risks\n\n"
+"Network Dependency: Power outages, bandwidth issues and service interruptions.\n"
+"System Dependency: Customer’s dependency on availability and reliability of provider’s systems.\n"
+"Cloud Provider Dependency: Provider could became insolvent or acquired by competitor, resulting in the service suddenly terminating.\n"
+"Lack of control: Customers unable to deploy technical or organisational measures to safeguard the data. May result in reduced availability, "
+"integrity, confidentiality, intervenability and isolation.\n"
+"Lack of Information on Processing Transparency\n\n\n"
+
+
+"Cloud-Based Database Solutions\n\n"
+"As a type of Software as a Service (SaaS), cloud-based database solutions fall into two basic categories:\n"
+"Data as a Service (DaaS) and Database as a Service (DBaaS).\n"
+"Key difference between the two options is mainly how the data is managed.\n\n\n"
+
+"Database as a Service (DBaaS):\n\n"
+"Offers full database functionality to application developers.\n\n"
+
+"Provides a management layer that provides continuous monitoring and configuring of the database to optimized scaling, high availability, "
+"multi-tenancy (that is, serving multiple client organizations) and effective resource allocation in the cloud, thereby sparing the developer "
+"from ongoing database administration tasks.\n\n\n"
+
+
+
+"Data as a Service (DaaS)\n\n"
+"Services enables data definition in the cloud and subsequently querying. Does not implement typical DBMS interfaces (e.g., SQL) but instead "
+"data is accessed via common APIs.\n\n"
+
+"Enables organization with valuable data to offer access to others. Examples Urban Mapping (geography data service), Xignite (financial data service) and "
+"Hoovers (business data service.)\n\n"
+"Multi-tenant cloud database: shared server, separate database server process architecture (two databases, two processes)\n"
+"Multi-tenant cloud database: shared DBMS server, separate databases (two databases, one process).\n"
+"Multi-tenant cloud database: shared database, separate schema architecture (one database, one process)\n\n\n"
+    </string>
+    <string name="ChapterEight_text">
+        "Topic 8: Data Warehousing Mining Analytics\n\n\n\n"
+
+
+"Data Warehousing Concepts\n\n"
+"Data Warehouse central concepts/attributes:  subject-oriented, integrated, time-variant , non-volatile, collection of data in support "
+"of management’s decision-making process\n\n\n"
+
+"Subject-Oriented Data\n\n"
+"The warehouse is organized around the major subjects of the enterprise (e.g. customers, products and sales) rather "
+"than the major application areas (e.g. customer invoicing, stock control and product sales).\n"
+"This is reflected in the need to store decision-support data rather than application- oriented data.\n\n\n"
+
+"Integrated Data\n\n"
+"The data warehouse integrates corporate application-oriented data from different source systems, which often includes data that is inconsistent.\n"
+"The integrated data source must be made consistent to present a unified view of the data to the users.\n"
+
+"Time-Variant Data\n\n"
+"Data in the warehouse is only accurate and valid at some point in time or over some time interval (the data warehouse accounts for this).\n"
+"Time-variance is also shown in: the extended time that the data is held, the implicit or explicit association of time with all data and the fact "
+"that the data represents a series of snapshots (e.g., 10 x annual reports = 10 snapshots of the company over a 10-year period)\n\n\n"
+
+"Non-Volatile Data\n\n"
+"Data in the warehouse is not normally updated in real-time (RT) but is refreshed from operational systems on a regular basis.\n
+"However, emerging trend is towards real-time or near- real-time-data warehouses\n"
+"New data is always added as a supplement to the database, rather than a replacement.\n\n\n"
+
+"Benefits of Data Warehousing\n\n"
+"Potential high returns on investment, Competitive advantage, Increased productivity of corporate decision-makers\n\n\n"
+
+"OLTP vs. OLAP\n\n"
+"OLTP (On-line Transaction Processing) – DB, large volume of transactions.\n"
+"short transactions (INSERT, UPDATE, DELETE) with very fast query processing.\n"
+"number of transactions per second is an effectiveness measure.\n"
+"purpose: maintaining data integrity in multi-access environments.\n\n
+
+"OLTP database is usually in entity/relational model (3NF).\n\n\n"
+
+"OLAP (On-line Analytical Processing) – DW\n\n"
+"Relatively low volume of transactions\n"
+"Queries are often very complex and involve aggregations.\n"
+"Response time is an effectiveness measure.\n"
+"Purpose: OLAP applications are widely used by data mining techniques.\n"
+"OLAP database is aggregated, historical data, stored in multi-dimensional schemas.\n\n"
+
+"Data Warehouse Queries\n\n"
+"The types of queries that a data warehouse is expected to answer ranges from the relatively simple to the highly complex and "
+"is dependent on the type of end-user access tools used.\n\n"
+
+"End-user access tools include:\n"
+"Traditional reporting and query,  OLAP\n\n\n"
+
+
+"Problems of Data Warehousing:\n\n"
+"Underestimation of resources for data loading\n"
+"Hidden problems with source systems\n"
+"Required data not captured\n"
+"Increased end-user demands\n"
+"Data homogenization\n"
+"High demand for resources\n"
+"Data ownership\n"
+"High maintenance\n"
+"Long duration projects\n"
+"Complexity of integration\n\n\n"
+
+"Operational Data Sources: OLTP Databases\n"
+"Main sources are on-line transaction processing (OLTP) databases. q Also include sources such as: personal databases, spreadsheets, "
+"Enterprise Resource Planning (ERP) files, web usage log files\n\n\n"
+
+"Operational Data Sources: Operational Data Store (ODS)\n\n"
+"Holds current and integrated operational data for analysis.\n"
+"Often structured and supplied with data in the same way as the data warehouse.\n"
+"May act as staging area for data to be moved into the warehouse.\n"
+"Often created when legacy operational systems are found to be incapable of achieving reporting requirements.\n\n\n"
+
+"ETL Manager / Load Manager\n\n"
+"Data for an enterprise data warehouse must be extracted from one or more data sources, transformed into a form that is easy to analyse and "
+"consistent with data already in the warehouse, and then finally loaded into the data warehouse.\n"
+"Nowadays there are tools that automate the extraction, transformation and loading (ETL) processes and also offer additional facilities such "
+"as data profiling, data quality control, and metadata management.\n\n\n"
+
+"Warehouse Manager\n\n"
+"Warehouse manager performs all the operations associated with the management of the data in the data warehouse such as:\n\n"
+
+"Analysis of data to ensure consistency.\n"
+"Transformation and merging of source data from temporary storage into data warehouse tables.\n"
+"Creation of indexes and views on base tables.\n"
+"Generation of denormalizations (if necessary).\n"
+"Generation of aggregations (if necessary).\n"
+"Backing-up and archiving data.\n\n"
+
+"In some cases, also generates query profiles to determine which indexes and "
+"aggregations are appropriate. q A query profile: can be generated for each user, group of user or the data warehouse/ is based "
+"on information that describes the characteristics of the queries such as frequency, target table(s) and size of results set.\n\n\n"
+
+"Query Manager\n\n"
+"Query manager performs the operations associated with the management of user queries such as:\n"
+"Directing queries to the appropriate tables and scheduling the execution of queries.\n"
+"In some cases, the query manager also generates query profiles to allow the warehouse manager to determine which indexes and aggregations are appropriate.\n\n\n"
+
+
+
+"Metadata\n\n"
+"Metadata = data about data\n"
+"Metadata uses: variety of purposes: effective management of metadata is critical in achieving a fully integrated DW.\n\n"
+
+"Metadata definitions are used by processes in the DW such as:\n\n"
+"To map data sources to a common view of information within the warehouse.\n"
+"To automate the production of summary tables.\n"
+"To direct a query to the most appropriate data source.\n\n\n"
+
+"End-User Access Tools\n\n"
+"Main purpose of data warehouse is to support decision makers and this is achieved through the provision of a range of access tools including: \n"
+"reporting and querying\n"
+"application and development\n"
+"OLAP\n"
+"data mining\n\n\n"
+
+
+"Data Warehouse DBMS Requirements\n\n"
+"We need hardware infrastructure + software infrastructure (e.g.., warehouse "
+"manager as a software application) able to handle huge amounts of data. q Some characteristics/criteria:\n"
+"Load performance\n"
+"Load processing\n"
+"Data quality management\n"
+"Query performance\n"
+"Terabyte scalability\n"
+"Mass user scalability\n"
+"Networked data warehouse\n"
+"Warehouse administration\n"
+"Integrated dimensional analysis\n"
+"Advanced query functionality\n\n\n"
+
+
+"Data Mart\n\n"
+"A database that contains a subset of corporate data, to support the analytical requirements of a particular business unit (such as the Sales department), "
+"to support users who share the same requirements to analyse a particular business process (such as property sales).\n\n"
+        
+
+"Data Mart vs. Data Warehouse\n\n"
+"Building a data mart is simpler compared with establishing an enterprise-wide data warehouse.\n"
+"The cost of implementing data marts is normally less than that required to establish a enterprise-wide data warehouse.\n"
+"The future users of a data mart are more easily defined and targeted to obtain support for a data mart than an enterprise-wide data warehouse project\n\n\n"
+
+
+"Data Mining\n\n"
+"The process of extracting valid, previously unknown, comprehensible, and actionable information from large databases and using it to make crucial "
+"business decisions.\n"
+"Involves the analysis of data and the use of software techniques for finding hidden and unexpected patterns and relationships in sets of data.\n"
+"Reveals information that is hidden and unexpected, as little value in finding patterns and relationships that are already intuitive.\n"
+"Patterns and relationships are identified by examining the underlying rules and features in the data.\n\n"
+
+"Tends to work from the data up.\n"
+"Accurate results normally require large volumes of data to deliver reliable conclusions.\n"
+"Starts by developing an optimal representation of structure of sample data (i.e., model building), during which time knowledge is acquired "
+"(i.e., time horizon of analysis) and extended to larger sets of data (i.e., scope of analysis).\n"
+"Data mining can provide huge paybacks for companies who have made a significant investment in data warehousing.\n\n\n"
+
+"Examples of Applications of Data Mining\n\n"
+"Retail / Marketing:\n"
+"Identifying buying patterns of customers.\n"
+"Finding associations among customer demographic characteristics. § Predicting response to mailing campaigns.\n"
+"Market basket analysis.\n\n\n"
+
+"Banking:\n"
+"Detecting patterns of fraudulent credit card use.\n"
+"Identifying loyal customers.\n"
+"Predicting customers likely to change their credit card affiliation. § Determining credit card spending by customer groups.\n\n\n"
+
+"Data Mining Operations\n\n"
+"Four main data mining operations: Predictive modelling, Database segmentation, Link analysis, Deviation detection.\n"
+
+"There are recognized associations between the business applications and the corresponding data mining operations "
+"(e.g., direct marketing strategies use database segmentation).\n\n\n"
+
+"Data Mining Techniques\n\n"
+"Different data mining operations (predictive modelling, database segmentation, link analysis, deviation detection) has particular strengths and weaknesses.\n\n"
+
+"Data mining techniques are specific implementations of the data mining operations.\n"
+"Data mining tools implement a technique.\n\n"
+
+"Selection criteria for data mining tools includes:\n"
+"Suitability for certain input data types, Transparency of the mining output, Tolerance of missing variable values, "
+"Level of accuracy possible, Ability to handle large volumes of data.\n\n\n"
+    </string>
+    <string name="ChapterNine_text">
+        "Big Data\n\n"
+"Big data size beyond capacity of local storage and processing.\n"
+"Big data cannot be analysed using RDBMS (or Excel or standard statistical tools).\n"
+"Huge amounts of data stored in several data centres.\n"
+"Used in various fields, from science to marketing.\n"
+"Big data is not one tool, format or database, it is paradigm.\n\n"
+ 
+"Why is there big data?\n"
+"More and more users.\n"
+"Generate more and more data.\n"
+"Request more and more services.\n"
+"Hence, we need more storage, more capacity.\n\n"
+ 
+"How can we store such huge amounts of data?\n"
+"How can we process such huge amounts of data? (in a specific time)\n\n\n"
+ 
+"The 3 Vs of Big Data\n\n"
+"Volume – massive amount of data (quantity)\n"
+"Variety – unstructured and semi-structured data (variations)\n"
+"Velocity – high frequency (speed)\n\n\n"
+ 
+ 
+"Volume = Quantity of data to be stored.\n"
+"Scaling up is keeping the same number of systems but migrating each one to a larger system.\n"
+"Scaling out means when the workload exceeds server capacity, it is spread out across a number of servers.\n\n"
+ 
+"Big data is generally too big for local storage and processing.\n"
+"Data types of large size (for example phots/videos, not text/numbers).\n"
+"Increase in size dimension (Gigabyte > Terabyte > Petabyte > Zettabyte)\n"
+"We are rapidly and massively increasing the storage of data.\n\n\n"
+ 
+"Velocity = Speed at which data is entered into system and must be processed.\n"
+"Stream processing focuses on input processing and requires analysis of data stream as it enters the system.\n"
+"Feedback loop processing refers to the analysis of data to produce actionable results\n\n\n"
+        
+ 
+ 
+"Velocity\n\n"
+"Data comes at very fast rates (often real-time/streaming or near-real-time).\n"
+"Data needs to be high processing speed and low processing time.\n"
+"To process data, we need code: local processing vs. processing elsewhere?\n\n\n"
+ 
+"Variety: Variations in the structure of data to be stored.\n"
+"Structured data: Tables, RDBMS\n"
+"Semi-structured data: Log files (e.g., Gmail account logins), Unstructured data (about 80%!), "
+"User-generated contents / social media, Newspapers, books, blog post texts, Audio, video\n"
+"Relational model: structure/schema on write, Big Data model: structure/schema on read.\n\n\n"
+ 
+ 
+"Additional Vs of Big Data\n\n"
+"Veracity – is the data sufficient for the types of predictions/conclusions that you want to reach? (added by IBM)\n"
+"Validity – is the data clean, well managed, meeting requirements, up to standards?\n"
+"Value – does the data have value? Do we have ROI?\n"
+"Variability – does the data meaning change over time, location or other contexts?\n"
+"Venue – where is the data located and how does this affect access?\n"
+"Vocabulary – is the metadata of the data comparable? (e.g., does the same word have the same meaning?)\n"
+"Vagueness – do you know what you are talking about? What are your goals? What are you trying to accomplish?\n"
+"Visualization – ability to graphically represent data to make it understandable to users.\n\n\n"
+ 
+ 
+"Uses of Big Data\n\n"
+"Use of Big Data\n\n"
+ 
+"Big Data for Business\n\n"
+"Predictive Marketing.\n"
+"Based on:\n\n"
+"Consumer behaviour data (where, when you log in) § Demographic data (what you have revealed)\n"
+"Data purchased from variety of source\n"
+"To predict for major life events, having a child, buying a house (for example)\n"
+"Editd: Predict fashion trends (brands, colours, cuts)\n"
+"Google uses big data to place advertising.\n"
+"What I searched for, what other people have searched for etc. Is that right? (ethical question)\n\n"
+ 
+"Fraud Detection, Based on:\n"
+"Point of sales, geolocation, IP address\n"
+"Time (e.g., unusual login time for location?)\n"
+"Biometrical data (e.g., mouse movements)\n"
+"To prevent fraudulent transactions\n\n\n"
+ 
+"Big Data for Consumers\n\n"
+"Apple Siri: "
+"Speech recognition, Time/location data\n"
+"Google Now: Makes recommendation before you need them. Based on time, weather, news, calendar data\n"
+"Amazon Echo/Alexa\n"
+"Yelp: Millions of recommendations aggregated\n"
+"Spotify: Music recommendations\n"
+"Amazon: Book recommendations\n"
+"Netflix: Netflix prize\n\n\n"
+ 
+"Big Data for Science\n\n"
+"Google Flu Trends: identifying flu outbreaks on web search distribution (had both "
+"success and failures, discontinued, but similar projects exist, active research space)\n"
+"Google Books / Ngram Viewer: Search how much a name/word has been used\n"
+"US National Institute of Health: aggregated many brain scans to create a map of brain functions\n\n\n"
+ 
+"Jobs and Skills in Big Data\n\n"
+"Data Science\n\n"
+ 
+ 
+"Math/Statistical Knowledge\n\n"
+"Need mathematical training.\n"
+"Esp. statistical/probabilistic knowledge.\n"
+"Math/statistical knowledge is a necessary condition, but not a sufficient condition\n"
+"Only useful in combination with the other two skill sets.\n\n\n"
+ 
+"Domain/Subject Knowledge\n\n"
+"Domain = marketing, banking, research etc.\n"
+"Expert understanding of how the domain “works”\n"
+"Gives direction for data science/analysis\n"
+"Ensures relevant insights from data analysis\n\n\n"
+ 
+"Coding (“Hacking Skills”)\n\n"
+"Coding needed for creative exploration of data set\n"
+"Needed for combination of widely different data sets\n"
+"Algorithmic thinking necessary\n"
+"Example languages used: Python, R\n\n\n"
+ 
+"Ethics of Big Data\n\n"
+"Widely accepted: people have a right to anonymity and privacy\n"
+"There have been many breaches in the context of data\n\n"
+"Anonymizing data: removing all personally identifiable data\n"
+"De-anonymizing data possible. Examples: Netflix Prize, Twitter, Massachusetts electorate\n\n"
+ 
+"Some emerging best practices from a business perspective:\n"
+"Anonymization needs to be done carefully, or data with personal information not shared at all\n\n"
+ 
+"Clear policy how to protect data and who can access data\n"
+"Data-breach insurance is available\n"
+"Limit information to store (if you do not have it, you cannot loose it)\n"
+"General “ownership” of data/information and ethical/legal standards are areas of active societal negotiation and discussion\n\n\n"
+ 
+"Sources of Big Data\n\n"
+"Human-Generate Big Data\n"
+"Intentionally created:\n"
+"Photos, video, audio\n?\"
+"Text on social media\n"
+"Likes or helpful votes\n"
+"Web searches\n\n"
+ 
+"Webpages bookmarks\n"
+"Emails\n"
+"Text messages\n"
+"Phone calls\n"
+"eBook highlighting\n"
+"Online purchases\n\n\n"
+ 
+"Human-Generate Big Data\n\n"
+"Unintentionally created:\n\n"
+"Photo metadata (Exif): Time, GPS location, Direction of phone\n"
+"Phone call metadata: Time, location (cell tower)\n"
+"Metadata can be much larger than the actual user data\n"
+"May not be user readable but is machine readable\n"
+"Email metadata: From/to/cc/timestamp etc.\n"
+"MIT Immersion can identify clusters of you friends\n"
+"Twitter metadata\n"
+"Header includes location, creation date of account, application sent with\n\n\n"
+ 
+"2) Machine-Generated Data\n\n"
+"Cell phone and cell tower\n"
+"Satellite > GPS device\n"
+"RFID readings\n"
+"Medical devices readings\n"
+"Spam bots vs. spam filters\n\n\n"
+ 
+ 
+"Internet of Things\n\n"
+"Much data enabled and generated by the Internet of Things. Billions of unique “non-humans” connected to the Internet.\n"
+"Examples: Smart devices, Smart homes, Smart grids, Smart cities\n\n\n"
+ 
+"Uses of Internet of Things\n\n:
+"Monitoring production lines\n"
+"Metering utilities\n"
+"Tracking animals\n"
+"Measuring temperature/environment (e.g., earthquake, tsunami warnings)\n\n"
+ 
+"Automating home/building\n"
+"Managing energy\n"
+"Directing industrial appliances\n"
+"Managing infrastructure Management, Monitoring health\n"
+"Content: machine-readable, often high volume/velocity but low variety\n\n\n"
+ 
+"Structured Data\n\n"
+"Table/spreadsheet-type data\n"
+"Specified field with specified value\n"
+"Mostly stored in relational databases\n"
+"80% of structured data in relational databases (estimate)\n"
+"Most common RDBMSs: Oracle, Microsoft SQL Server, MySQL\n\n\n"
+ 
+ 
+"Semi-Structured and Unstructured Data\n\n"
+"Speech/text, Presentations, images, videos\n"
+"Convert to text via text-mining and then give a structure – very difficult and time consuming\n"
+"80% of business data is unstructured (estimate)\n\n\n"
+ 
+"Semi-Structured Language\n\n"
+"Not in rows and columns, but fields are still marked and data are still identifiable\n\n"
+"Most common:\n"
+"XML (eXtensible Markup Language) – long established standard\n"
+"JSON (JavaScript Object Notation) – more recent, shorter notation\n\n\n"
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chapter_one">Chapter One</string>
+    <string name="title_activity_chapter_two">Chapter Two</string>
+    <string name="title_activity_chapter_three">Chapter Three</string>
+    <string name="title_activity_chapter_four">Chapter Four</string>
+    <string name="title_activity_chapter_five">Chapter Five</string>
+    <string name="title_activity_chapter_six">Chapter Six</string>
+    <string name="title_activity_chapter_seven">Chapter Seven</string>
+    <string name="title_activity_chapter_eight">Chapter Eight</string>
+    <string name="title_activity_chapter_nine">Chapter Nine</string>
+
+</resources>

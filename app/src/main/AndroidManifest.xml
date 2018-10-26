@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.haider.infs2608learningapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".TitleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ChapterTwo"
+            android:label="@string/title_activity_chapter_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterThree"
+            android:label="@string/title_activity_chapter_three"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterFour"
+            android:label="@string/title_activity_chapter_four"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterFive"
+            android:label="@string/title_activity_chapter_five"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterSix"
+            android:label="@string/title_activity_chapter_six"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterSeven"
+            android:label="@string/title_activity_chapter_seven"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterEight"
+            android:label="@string/title_activity_chapter_eight"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterNine"
+            android:label="@string/title_activity_chapter_nine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterOne"
+            android:label="@string/title_activity_chapter_one"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChapterFiveYoutubeActivity" />
+        <activity android:name=".ChapterTwoYoutubeActivity" />
+        <activity android:name=".ChapterThreeYoutubeActivity" />
+        <activity android:name=".ChapterFourYoutubeActivity" />
+        <activity android:name=".ChapterSixYoutubeActivity" />
+        <activity android:name=".ChapterOneYoutubeActivity" />
+        <activity android:name=".ChapterEightYoutubeActivity" />
+        <activity android:name=".ChapterSevenYoutubeActivity" />
+        <activity android:name=".ChapterNineYoutubeActivity" />
+        <activity android:name=".ChapterOneQuiz" />
+        <activity android:name=".ChapterTwoQuiz" />
+        <activity android:name=".ChapterThreeQuiz" />
+        <activity android:name=".ChapterFourQuiz" />
+        <activity android:name=".ChapterFiveQuiz" />
+        <activity android:name=".ChapterSixQuiz" />
+        <activity android:name=".ChapterSevenQuiz" />
+        <activity android:name=".ChapterEightQuiz" />
+        <activity android:name=".ChapterNineQuiz" />
+        <activity android:name=".MainQuiz"></activity>
+    </application>
+
+</manifest>

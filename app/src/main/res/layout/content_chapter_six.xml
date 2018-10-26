@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ChapterSix"
+    tools:showIn="@layout/activity_chapter_six">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/Chapter6TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/ChapterSix_text1" />
+
+        <ImageView
+            android:id="@+id/Chapter6IM1"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:contentDescription="dbms"
+            app:srcCompat="@drawable/chaptersiximageone" />
+
+        <TextView
+        android:id="@+id/Chapter6TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_weight="1"
+        android:text="@string/ChapterSix_text2" />
+
+        <Button
+            android:id="@+id/youtubeChapter6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch Video on Transaction Management"
+            tools:text="Watch Video on Transaction Management" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
